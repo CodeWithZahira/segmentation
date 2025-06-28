@@ -1,5 +1,7 @@
 streamlit
 tensorflow
+pillow
 numpy
 opencv-python
-pillow
+scikit-image
+
