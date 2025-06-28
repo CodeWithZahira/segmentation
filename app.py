@@ -8,15 +8,13 @@ import os
 import io
 from datetime import datetime
 
-# ----------------------------
 st.set_page_config(page_title="Segmentation U-Net", layout="centered")
 
 st.title("🧠 Segmentation Médicale avec U-Net")
 st.markdown("Ce modèle U-Net effectue une **segmentation automatique** sur des images médicales en niveaux de gris.")
 
-# ----------------------------
 # Choix de la taille
-target_size = st.selectbox("📐 Taille d'entrée du modèle", options=[128, 256], index=0)
+target_size = st.selectbox("📐 Taille d'entrée du modèle", options=[128, 128], index=0)
 
 # ----------------------------
 @st.cache_resource
